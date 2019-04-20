@@ -6,7 +6,8 @@
 		width: 100%;
 		top: 0px;
 		left: 0px;
-		background: #02263b;
+		/*background: #02263b;*/
+		background: #6e184e;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 		z-index: 1000;
 	}
@@ -60,9 +61,13 @@
 		line-height: 18px;
 	}
 	.main-nav .sub-menu > li + li > a {border-top: 1px solid #333;}
+	.body_container{
+		margin-top: 15px;
+	}
 /*sub menu*/
 	.sub_menu{
-		background-color: #0c2e40;
+		/*background-color: #0c2e40;*/
+		background-color: #6e184e;
 		color: #fff;
 		list-style: none;
 	}
@@ -86,7 +91,8 @@
 	}
 	.sub_menu_item:hover{
 		/*background-color: #00a8e6;*/
-		background: #3374C2;
+		/*background: #3374C2;*/
+		background: #994577;
 	}
 /*end*/
 	@media (max-width: 1220px) {
@@ -96,7 +102,8 @@
 	/* ===== Mobile header ===== */
 	.mobile-header {
 		position: relative;
-		background: #02263b;
+		/*background: #02263b;*/
+		background: #6e184e;
 		z-index: 5;
 	}
 	.mobile-header .upper {
@@ -505,7 +512,7 @@
 	}
 	#project-page .project-design .main-title > * ,
 	.project-video .main-title > * {
-		color: #f58a37;
+		/*color: #f58a37;*/
 	}
 	#project-page  .project-section-01 {margin: 0 0 50px 0;}
 	#project-page .project-download {
@@ -886,7 +893,7 @@
 		height: 1px;
 		background: #e1e1e1;
 	}
-	#project-page .page-introduction {margin: 0 0 50px 0;}
+	#project-page .page-introduction {margin: 0;}
 	#project-page .page-introduction .panel-head {
 		position: relative;
 		margin: 0 0 50px 0;
@@ -902,6 +909,72 @@
 		text-transform: uppercase;
 	}
 	#project-page .page-introduction .heading > * {color: #ff6600;}
+	#project-page .page-introduction .table_introduction{padding: 15px;}
+	#project-page .page-introduction .table_introduction p img {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 .07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+	#project-page .infomation_content{
+		background-color: #dddddd;
+		padding: 20px 20px 20px 20px;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: nowrap;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+	}
+
+	#project-page .infomation_content div:nth-child(1){
+		width: calc(50% - ( 0.5 * 30px ) );
+	}
+
+	#project-page .infomation_content div:nth-child(1) div,
+	#project-page .infomation_content div:nth-child(2) div{
+		width: 100%
+	}
+	/*tien ich*/
+	#project-page .utilities_container{
+		align-items: flex-start;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}
+	#project-page .utilities_container .panel-grid-cell{
+		width: calc(33.3333% - ( 0.66666666666667 * 30px ) );
+	}
+	#project-page .utilities_container .panel-grid-cel .widget{
+		margin-bottom: 30px;
+		float: left;
+		clear: both;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	#project-page .utilities_container .wp-caption {
+		background: #fff;
+		border: 1px solid #f0f0f0;
+		max-width: 100%;
+		padding: 5px 3px 10px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#project-page .utilities_container .wp-caption-text {
+		margin: 10px 0 0 0;
+	}
+	#project-page .payment_schedule{
+		color: #fff; padding: 15px;
+	}
+	#project-page .payment_schedule td{
+		width: 50%;
+	}
 
 	@media (min-width: 1220px) {
 		#project-page  .project-section-01 .content {padding-left: 40px;}
@@ -1832,11 +1905,15 @@
     }
 
 	/* ===== Footer style ===== */
-
+	.footer{
+		background-color: #eeeeee;
+		background-image: url(../../../uploads/images/footer-chung-cu-6th-element.jpg);
+	}
 	/* >>>>> Upper <<<<< */
 	.footer .upper {
 	    padding: 25px 0 0px 0;
-	    background: #02263b;
+	    /*background: #02263b;*/
+	    /*background: #6e184e;*/
 	    font-size: 14px;
 	    line-height: 20px;
 	    color: #fff;
@@ -2059,7 +2136,8 @@
 
 .page-introduction{}
 .project-design *,.page-introduction *{
-	font-family:'HTVietNam' !important;
+	/*font-family:'HTVietNam' !important;*/
+	font-family: Arial, Helvetica, sans-serif !important;
 }
 /* </baoveanninhthanglong> */
  #backtop {
@@ -2088,6 +2166,15 @@
         opacity: 0;
         z-index: -1
     }
+}
+
+@media (max-width: 780px){
+	#project-page .infomation_content{
+		flex-direction: column;
+	}
+	#project-page .infomation_content div:nth-child(1){
+		width: 100%;
+	}
 }
 
 .mobile-hotline-fixed {
